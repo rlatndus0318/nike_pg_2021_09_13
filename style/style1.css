@@ -391,7 +391,7 @@ p.new {
     width: 50%;
 }
 
-.owl-carousel.owl-drag .owl-item {
+.m-slider > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item {
     width:100%;
 }
 
