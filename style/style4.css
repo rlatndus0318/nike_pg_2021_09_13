@@ -1,0 +1,638 @@
+/*노토산스*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/*영ㅇ어*/
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+:root {
+    --sub-text: 'Permanent Marker', cursive;
+    --e-text: 'Staatliches', cursive;
+    --k-text: 'Noto Sans KR', sans-serif;
+    --n-text: 'Acme', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.s-sliderbox {
+    padding-top: 3em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #000;
+    align-items: center;
+    background: linear-gradient(270deg, #fff 50%, #3a5779 50%);
+
+
+}
+
+#s-img {
+    width: 50%;
+    cursor: pointer;
+
+}
+
+.fix-img > img {
+    width: 70%;
+    margin: auto;
+}
+
+#s-img ul {
+    padding-top: 1em;
+    overflow: hidden;
+    width: 70%;
+    display: flex;
+    margin: auto;
+
+}
+
+#s-img > ul > li {
+    width: calc(100%/5 - 10px);
+    margin: auto;
+
+}
+
+.n-slider li.on {
+    border: solid 5px rgba(0, 0, 0, 0.3);
+}
+
+.s-textbox {
+    padding: 5%;
+    width: 50%;
+    margin-top: 5em;
+
+    position: relative;
+}
+
+.pro_name_box > p:first-child {
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+.pro-text {
+    font-size: 1.3rem;
+    width: 100%;
+    margin: 3em auto;
+    font-family: var(--k-text);
+    padding: 2%;
+
+}
+
+.pro_name_box {
+    font-family: var(--n-text);
+    position: relative;
+    text-align: left;
+}
+
+.pro_name {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+
+.option-box {
+    width: 100%;
+    font-weight: 700;
+    font-size: 2rem;
+
+}
+
+.size {
+    font-family: var(--n-text);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.6rem;
+
+}
+
+.size > select {
+    font-family: var(--n-text);
+    margin-left: 12%;
+    width: 150px;
+    padding: 1%;
+    border: none;
+    font-size: 1.5rem;
+    background: #e5e5e5;
+
+}
+
+.size > select > option {
+    font-size: 1.5rem;
+
+
+
+}
+
+.s-textbox > .pro-name {
+    font-weight: 800;
+}
+
+
+
+.amount {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    font-family: var(--n-text);
+
+}
+
+.amount_box {
+    padding-left: 1.5em;
+
+}
+
+.amount_box > input {
+
+    border: none;
+    background: none;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.buy-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 5em;
+    font-family: var(--n-text);
+
+}
+
+.buy-box .button {
+    background: #000;
+    color: #fff;
+    padding: 2% 5%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.buy-box .button:hover {
+    background: #bfff00;
+    color: #000;
+}
+
+.buy-box .button:first-child {
+    margin-right: 1rem;
+}
+
+.pro_name_box {
+    position: relative;
+}
+
+.pro_name::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 10px;
+    background: #000;
+    bottom: -30px;
+    left: 0;
+}
+
+.select-box {
+    padding: 2%;
+}
+
+.price {
+    font-family: var(--e-text);
+    padding: 2%;
+
+}
+
+
+.price > p:first-child {
+    font-size: 2.5rem;
+    color: #847770;
+}
+
+.price_w {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #3a5779;
+   
+}
+
+
+.other-box {
+    padding: 2%;
+    padding-bottom: 100em;
+    color: #000;
+    position: relative;
+}
+
+.nike_bg_2 {
+
+    position: relative;
+    margin-top: 200px;
+
+}
+
+.nike_bg_2 > img {
+    width: 250px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.nike_bg_2 > p {
+    padding: 2%;
+    color: rgba(204, 204, 204, 0.5);
+    font-weight: 900;
+    font-size: 8rem;
+    padding-top: 70px;
+    z-index: 10;
+    width: 100%;
+    font-family: var(--n-text);
+
+
+}
+
+.other-color ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.other-color ul li {
+    width: 25%;
+    padding: 1%;
+    overflow: hidden;
+
+
+}
+
+.other-color ul li img {
+    filter: drop-shadow(8px 10px 8px rgba(0, 0, 0, 0.7));
+    animation: move 1s 0s infinite;
+
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0px) rotate(-35deg) translateX(-20px);
+
+
+    }
+
+    100% {
+        transform: translateY(15px) rotate(-35deg) translateX(-20px);
+
+    }
+}
+
+.other-color ul li span {
+
+    font-size: 1.3rem;
+    font-weight: 500;
+    display: block;
+
+
+}
+
+.other-color ul li span:nth-of-type(1) {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.other-color ul li span:nth-of-type(2),
+.other-color ul li span:nth-of-type(3) {
+    color: #000;
+
+}
+
+.other_text_box {
+    text-align: center;
+    position: relative;
+    padding-bottom: 30px;
+    font-family: var(--n-text);
+    cursor: pointer;
+}
+
+.other_text_box::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    padding-top: 50%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+
+    opacity: 0.5;
+    z-index: -1;
+
+}
+
+.other_text_box_1::after {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.other_text_box_2::after {
+    background-color: #b3dbe3;
+    opacity: 0.5;
+}
+
+.other_text_box_3::after {
+    background-color: #a49dad;
+    opacity: 0.5;
+}
+
+.other_text_box_4::after {
+    background: #c9e1bd;
+}
+
+.s_button {
+    border: solid 2px #000;
+    padding: 1%;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+
+}
+
+.s_button:hover {
+    background: #fff;
+}
+
+
+.s-textbox {
+    position: relative;
+}
+
+.s-bg {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 50%;
+}
+
+.s-bg > img {
+    opacity: 0.2;
+}
+
+
+@media screen and (max-width : 1024px) {
+
+    .s-sliderbox {
+        flex-direction: column;
+    }
+
+    #s-img {
+        width: 100%;
+    }
+
+    .s-textbox {
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .pro-text {
+        width: 100%;
+    }
+
+    .other-color ul li {
+        width: 50%;
+    }
+
+
+}
+
+@media (max-width:1560px) and (min-width:1024px) {
+    .pro_name {
+        font-size: 4.5rem;
+    }
+
+}
+
+@media (max-width:1024px) and (min-width:320px) {
+    .s-sliderbox {
+        background:none;
+    }
+  .pro_name::after  {
+        left: 50%;
+      transform: translate(-50%);
+    }
+
+    .pro_name_box,
+    .pro-text,
+    .price,
+    .select-box {
+        text-align: center;
+
+    }
+
+    .select-box {
+    
+        margin: auto;
+
+    }
+
+    .option-box,
+    .buy-box {
+        width: 50%;
+        margin: auto;
+
+    }
+
+    .size,
+    .amount,
+    .buy-box {
+        justify-content: center;
+    }
+
+    .buy-box {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:680px) and (min-width:360px) {
+
+    .option-box,
+    .buy-box {
+        width: 80%;
+
+
+    }
+
+    .other-box {
+        padding-bottom: 50em;
+    }
+
+    .pro_name_box {
+        margin-top: 50px;
+    }
+
+    .pro_name_box > p:first-child {
+        font-size: 1.7rem;
+    }
+
+    .pro_name {
+        font-size: 3.5rem;
+        font-weight: 700;
+
+    }
+
+    .pro-text {
+        font-size: 1.2rem;
+    }
+.nike_bg_2 > p {
+        font-size: 5rem;
+    }
+    .option-box,
+    .amount_box > input,
+    .size > select,
+    .size > select > option,
+    .amount_box > input {
+        font-size: 1.8rem;
+    }
+
+    .other-color {
+        margin-top: 100px;
+    }
+
+    .other-color > p {
+        font-size: 3rem;
+
+    }
+
+    .other-color ul li span {
+        font-size: 1rem;
+    }
+
+    .other-color ul li span:nth-of-type(1) {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:480px) and (min-width:320px) {
+    .option-box, .buy-box {
+        width: 100%;
+        
+        
+    }
+    
+    #s-img {
+        width: 100%;
+        padding: 2em;
+    }
+
+    .fix-img > img {
+        width: 100%;
+    }
+
+    #s-img ul {
+        width: 100%;
+    }
+    .nike_bg_2 >img {
+        width: 100px;
+        top: 20%;
+        opacity: 0.3;
+        width: 80%;
+        left: -10%;
+    }
+    .nike_bg_2 > p {
+        font-size: 4rem;
+        text-align: center;
+        color: rgba(0,0,0,0.6);
+    }
+    .other-color ul li {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width:375px) and (min-width:320px) {
+    .price>p:first-child {
+        font-size: 1.8rem;
+    }
+    .price_w {
+    font-size: 2.8rem;
+  
+}
+
+    .other-box {
+        padding-bottom: 50em;
+    }
+
+    .n-slider li.on {
+        border: solid 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .pro_name_box > p:first-child {
+        font-size: 1.2rem;
+    }
+
+    .pro-text {
+        font-size: 1rem;
+    }
+
+    .pro_name {
+        font-size: 2.8rem;
+        font-weight: 700;
+
+    }
+
+    .option-box,
+    .amount_box > input,
+    .size > select,
+    .size > select > option,
+    .amount_box > input {
+        font-size: 1.5rem;
+    }
+
+    .amount_box > input[type="text"] {
+        width: 100px;
+
+    }
+
+    .buy-box .button {
+        font-size: 1.3rem;
+    }
+
+    .other-color > p {
+        font-size: 1.5rem;
+
+    }
+
+    .other-color ul li span {
+        font-size: 0.8rem;
+    }
+
+    .other-color ul li span:nth-of-type(1) {
+        font-size: 1rem;
+    }
+    .nike_bg_2 > p {
+        font-size: 3.4rem;
+    }
+}

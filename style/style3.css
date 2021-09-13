@@ -1,0 +1,323 @@
+@/*노토산스*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/*영ㅇ어*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+
+:root {
+    --sub-text: 'Abril Fatface', cursive;
+    --k-text: 'Noto Sans KR', sans-serif;
+    --en-text: 'Acme', sans-serif;
+}
+
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+    box-sizing:border-box;
+}
+a{
+    color:inherit;
+    text-decoration:none;
+    display:block;
+}
+body {
+    background: #000;
+    color: #fff;
+    font-size: 10px;
+}
+img {
+    display:block;
+    width:100%;
+    box-sizing:border-box;
+}
+.collection-imgbox {
+    width:100%;
+    padding:2%;
+    padding-bottom: 100em;
+     font-family: 'Abril Fatface', cursive;
+    overflow: hidden;
+  
+}
+.collection-imgbox img {
+    cursor: pointer;
+}
+.collection-imgbox ul li  {
+    overflow: hidden;
+}
+.collection-imgbox img:hover {
+    filter:grayscale(1);
+    transition: all .8s ease-in-out;
+    transform: scale(0.9);
+    
+}
+.co-box:not(:first-child) {
+    padding-top:10em;
+}
+.c-box-text {
+    width: 80%;
+    margin: auto;
+}
+.c-box1>ul {
+    display:flex;
+   justify-content:space-between;
+    align-items:center;
+}
+
+
+.c-box1>ul>li:first-child {
+   width:50%;
+}
+
+.c-box-text {
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: right;
+    margin-bottom: 50px;
+}
+.c-imgbox-1 {
+    position: relative;
+    margin-top: 10em;
+}
+.c-box1-text {
+    position:absolute;
+    width: 40%;
+    top:60%;
+    left: 75%;
+    padding: 2%;
+   transform: translate(-50%,-50%);
+    font-weight: 500 !important;
+    
+}
+
+.c-box2 ul {
+    display:flex;
+    justify-content: center;
+}
+.c-box2 ul li {
+    padding:1em;
+    width: 50%;
+}
+.c-box2 ul li:last-child {
+margin-top: 15%;}
+
+.c-box4 {
+    position:absolute;
+    right:0;
+    width:40%;
+    
+}
+
+
+.c-text {
+     font-size:3rem;
+    font-weight:800;
+}
+.c-box3 {
+    display:flex;
+    align-items: center;
+   z-index: 10;
+    position:relative;
+    min-height: 800px;
+    overflow: hidden;
+}
+.c-box4 {
+    width: 30%;
+}
+
+.c-box3 ul:first-child {
+    width:40%;
+}
+.c-box2-text {
+    position:absolute;
+ left: 58%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    writing-mode: vertical-rl;
+    background: linear-gradient(to right, #fff, #bfff00);
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   
+}
+
+.c-box2-text p:nth-child(2) {
+    text-align:right;
+}
+.c-box2-text p:nth-child(3) {
+    text-align:center;
+}
+.c-box5 {
+    position: relative;
+}
+.c-box5 ul {
+    display:flex;
+    justify-content: center;
+}
+.c-box5 ul li {
+    padding:2%;
+}
+
+.c-box5>.d-box>ul>li:first-child {
+    width: 600px;
+    left: 0;
+    position: absolute;
+    z-index: -5;
+    top: -100px;
+}
+.c-box5>.d-box>ul>li:last-child {
+    width: 400px;
+    left: 70%;
+    position: absolute;
+    z-index: -5;
+    top: 80%;
+}
+.c-box1{
+    position: relative;
+}
+.c-box1>.d-box2 {
+    width: 50%;
+    position: absolute;
+    left: 30%;
+    top: 80%;
+    z-index: -5;
+   
+}
+
+
+
+
+
+@media (max-width: 1500px) and (min-width:1024px) {
+    .c-box-text {
+    font-size: 3rem;
+}
+    .c-text {
+        font-size: 2rem;
+    }
+    
+}
+
+@media (max-width:1023px) and (min-width : 320px) {
+   
+    .c-box-text {
+    font-size: 2rem;
+}
+    .c-text {
+        font-size: 1.5rem;
+    }
+     .c-box1>ul{
+        flex-direction:column;
+    }
+    
+     .c-box1-text {
+        width:80%;
+        text-align:center;
+         left: 50%;
+         top: 100%;
+}
+     .c-box1>ul>li:first-child {
+   width:100%;
+}
+    
+   
+    .c-box2-text {
+        font-size:1.5rem;
+        
+    }
+    .c-box2 ul {
+        flex-direction:column;
+    }
+    .c-box2>ul>li {
+    width: 100%;
+    }
+    /*3번재*/
+    .c-box3 {
+        flex-direction: column;
+    }
+
+    .c-box3 ul:first-child {
+    width:100%;
+        z-index: 5;
+}
+    .c-box4 {
+    width:70%;   
+    position: relative;
+        
+}
+    .c-box4 li {
+        max-height: 600px;
+        
+    }
+    .c-box2-text {
+    width:80%;
+    left: 50%;
+        top:55%;
+      writing-mode: horizontal-tb;
+    transform: translate(-50%,-50%);
+}
+    
+}
+
+@media (max-width:816px) and (min-width:320px) {
+    
+    .c-box1-text {
+    
+     width: 100%;
+    font-size: 1.2rem;
+
+}
+}
+
+@media (max-width:768px) and (min-width:320px) {
+    
+    .c-box5 ul {
+        flex-direction: column;
+    }
+     .c-box5> .d-box {
+        width: 50%;
+         left: 5%;
+         top: 2%;
+    }
+    .c-box1>.d-box2 {
+    width: 50%;
+    position: absolute;
+    left: 30%;
+    top: 90%;
+    z-index: -5;
+}
+.c-box5>.d-box>ul>li:last-child {
+    width: 400px;
+    left: 60%;
+    position: absolute;
+    z-index: -5;
+    top: 70%;
+}
+    .c-box5 ul>li{
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media (max-width:425px) and (min-width:320px) {
+    .c-text {
+        font-size: 1rem;
+    }
+    .c-box1-text {
+        width: 90%;
+         top: 115%;
+}
+    
+     .c-box5>.d-box>ul>li:first-child {
+    width: 400px;
+    left: 10%;
+   
+}
+    .c-box5>.d-box>ul>li:last-child {
+    width: 300px;
+    left: 30%;
+    top: 90%;
+}
+   
+}
