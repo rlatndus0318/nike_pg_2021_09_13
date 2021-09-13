@@ -33,8 +33,13 @@ img {
 body {
     font-family: var(--e-text);
     font-size: 10px;
+    overflow-x:hidden;
    
 }
+html {
+    scroll-behavior: smooth;
+}
+
 
 .style_look {
     padding: 2%;
