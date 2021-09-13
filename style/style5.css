@@ -1,18 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-
+/*한글*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/*영어*/
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 
 :root {
-    --sub-text: 'Permanent Marker', cursive;
     --e-text: 'Staatliches', cursive;
     --k-text: 'Noto Sans KR', sans-serif;
 }
 
-/*한글*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 * {
     margin: :0;
@@ -129,17 +126,6 @@ body {
 
 }
 
-/*
-.sub-style-box {
-    width: 50%;
-    top: 70%;
-    left: 60%;
-    transform: rotate(45deg);
-
-    position: absolute;
-}
-*/
-
 .style_img_3 {
     position: relative;
 
@@ -203,9 +189,6 @@ body {
     font-size: 0px;
     line-height: 0px;
     margin: 0px 16px;
-
-
-
 }
 
 .owl-dots {
