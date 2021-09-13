@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        /*노토산스*/
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+        /*영ㅇ어*/
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-transform: capitalize;
+            box-sizing: border-box;
+
+        }
+
+        a {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        :root {
+            --sub-text: 'Abril Fatface', cursive;
+            --k-text: 'Noto Sans KR', sans-serif;
+            --e-text: 'Staatliches', cursive;
+        }
+
+
+        body {
+            overflow-x: hidden;
+
+            font-size: 10px;
+        }
+
+
+        img {
+            box-sizing: border-box;
+            width: 100%;
+            display: block;
+        }
+
+        section {
+            padding: 2%;
+        }
+
+
+        .menu-bar {
+            font-family: var(--e-text);
+            text-transform: uppercase;
+            width: 100%;
+            display: flex;
+            background: #000;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            position: relative;
+            height: 65px;
+
+        }
+
+
+        .logo {
+            width: 80px;
+            position: absolute;
+            left: 2%;
+            line-height: 65px;
+        }
+
+        .menu-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            
+        }
+
+        .menu-list>li {
+            padding: 0px 1%;
+            text-align: center;
+           
+        }
+
+        .menu-list>li>a {
+            padding: 0.29em;
+            font-weight: 500;
+            font-size: 2rem;
+            cursor: pointer;
+
+        }
+
+        .cart-list {
+            position: absolute;
+            right: 2%;
+        }
+
+        .cart-list li {
+            display: inline-block;
+            font-size: 1.5rem;
+            cursor: pointer;
+
+        }
+
+        .m_togglebtn {
+            display: none;
+            position: absolute;
+            right: 10px;
+            font-size: 2.2rem;
+        }
+
+        .m-menu>i {
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        .menu-list.active {
+            display: block;
+        }
+
+
+
+        @media (max-width : 1023px) and (min-width :320px) {
+
+            /*메뉴바*/
+            .menu-bar {
+                height: 50px;
+                line-height: 50px;
+            }
+
+            .logo {
+                width: 80px;
+                margin-top: 9px;
+            }
+
+            .m_togglebtn {
+                display: block;
+                color: #fff;
+
+            }
+
+            .sub-list {
+                display: none !important;
+            }
+           
+            .cart-list {
+                display: none;
+            }
+
+            .search {
+                margin: auto;
+                display: none;
+                width: 30%;
+            }
+
+            .menu-bar {
+                background: #000;
+                color: #fff;
+                align-items: center;
+                flex-direction: column;
+                justify-content: flex-start;
+                
+            }
+
+            .menu-list {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                font-size: 1.2rem;
+                background: #000;
+                color: #fff;
+                text-align: center;
+                z-index: 999;
+               
+            }
+
+            .menu-list>li>a {
+                display: inline-block;
+                font-size: 1.5rem;
+
+            }
+
+            .menu-list>li:hover>a {
+                text-decoration: underline;
+            }
+
+        }
+
+        @media (max-width:360px) and (min-width:320px) {
+
+            .logo {
+                width: 70px;
+                margin-top: 9px;
+                padding: 2px;
+            }
+        }
+
+
+        .sub-list { 
+           color: #fff;
+      font-family: var(--k-text);
+          background: #000;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 100%;
+            z-index:999;
+           
+
+        }
+        .sub-list>li {
+           width: calc(100%/5);
+         padding: 2%;
+            vertical-align: top;
+            display: inline-block;
+        }
+       
+        .sub-list>li>a:first-child {
+            font-weight: 700;
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        .sub-list li a {
+            padding: 3px 8px;
+            font-weight: 300;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+        .sub-list li ul li a{
+font-weight: 300;
+            
+            }
+        .sub-list li ul li a:hover {
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="menu-bar" id="header">
+        <a class="m_togglebtn" href="#"> <i class="fas fa-bars"></i> </a>
+        <div class="logo"><a href="">
+                <img src="header/n-2.png" alt="">
+            </a>
+        </div>
+        <ul class="menu-list">
+            <li><a href="#">new releases</a>
+               
+                        <ul class="sub-list">
+                            <li><a href="">NEW&FEATURED</a>
+                                <ul>
+                                    <li><a href="">신상품 전체보기</a></li>
+                                    <li><a href="">서울 컬렉션</a></li>
+                                    <li><a href="">에어포스 1</a></li>
+                                    <li><a href="">ACG</a></li>
+                                    <li><a href="">NEW TO SALE</a></li>
+                                    <li><a href="">썸머 에센셜</a></li>
+                                    <li><a href="">지속 가능 컬렉션</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">NEW FOR MEN</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                    <li><a href="">전체보기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">NEW FOR WOMEN</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                    <li><a href="">전체보기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">NEW FOR KIDS</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                    <li><a href="">전체보기</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+             
+
+
+            </li>
+            <li><a href="">men</a>
+            <ul class="sub-list">
+                            <li><a href="">NEW&FEATURED</a>
+                                <ul>
+                                    <li><a href="">신상품 전체보기</a></li>
+                                    <li><a href="">서울 컬렉션</a></li>
+                                    <li><a href="">에어포스 1</a></li>
+                                    <li><a href="">ACG</a></li>
+                                    <li><a href="">NEW TO SALE</a></li>
+                                    <li><a href="">썸머 에센셜</a></li>
+                                    <li><a href="">지속 가능 컬렉션</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">NEW FOR MEN</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                    <li><a href="">전체보기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">NEW FOR WOMEN</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                    <li><a href="">전체보기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">NEW FOR KIDS</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                    <li><a href="">전체보기</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+
+
+
+
+            </li>
+            <li><a href="">women</a>
+            <ul class="sub-list">
+                            <li><a href="">NEW&FEATURED</a>
+                                <ul>
+                                    <li><a href="">신상품 전체보기</a></li>
+                                    <li><a href="">서울 컬렉션</a></li>
+                                    <li><a href="">에어포스 1</a></li>
+                                    <li><a href="">ACG</a></li>
+                                    <li><a href="">NEW TO SALE</a></li>
+                                    <li><a href="">썸머 에센셜</a></li>
+                                    <li><a href="">지속 가능 컬렉션</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">NEW FOR MEN</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                    <li><a href="">전체보기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">NEW FOR WOMEN</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                    <li><a href="">전체보기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">NEW FOR KIDS</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                    <li><a href="">전체보기</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+
+
+            </li>
+            <li><a href="">kids</a>
+            <ul class="sub-list">
+                            <li><a href="">NEW&FEATURED</a>
+                                <ul>
+                                    <li><a href="">신상품 전체보기</a></li>
+                                    <li><a href="">서울 컬렉션</a></li>
+                                    <li><a href="">에어포스 1</a></li>
+                                    <li><a href="">ACG</a></li>
+                                    <li><a href="">NEW TO SALE</a></li>
+                                    <li><a href="">썸머 에센셜</a></li>
+                                    <li><a href="">지속 가능 컬렉션</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">NEW FOR MEN</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                    <li><a href="">전체보기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">NEW FOR WOMEN</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                    <li><a href="">전체보기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">NEW FOR KIDS</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                    <li><a href="">전체보기</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+
+
+            </li>
+            <li><a href="">sale</a>
+            <ul class="sub-list">
+                            <li><a href="">NEW&FEATURED</a>
+                                <ul>
+                                    <li><a href="">신상품 전체보기</a></li>
+                                    <li><a href="">서울 컬렉션</a></li>
+                                    <li><a href="">에어포스 1</a></li>
+                                    <li><a href="">ACG</a></li>
+                                    <li><a href="">NEW TO SALE</a></li>
+                                    <li><a href="">썸머 에센셜</a></li>
+                                    <li><a href="">지속 가능 컬렉션</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">NEW FOR MEN</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                    <li><a href="">전체보기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">NEW FOR WOMEN</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                    <li><a href="">전체보기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">NEW FOR KIDS</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                    <li><a href="">전체보기</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+            </li>
+        </ul>
+
+        <div class="cart-list">
+            <ul>
+                <li><i class="far fa-heart"></i></li>
+                <li><i class="fas fa-shopping-cart"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $(".m_togglebtn").click(function() {
+                $(".menu-list").toggleClass("active");
+            });
+            
+            $(".sub-list").hide();
+             $(".menu-list>li").mouseover(function() {
+               $(".sub-list").slideDown(100); 
+            });
+            $(".menu-list>li").mouseleave(function() {
+               $(".sub-list").hide(); 
+            });
+            
+            
+
+
+            //        $(".search").toggleClass("active");
+        });
+    </script>
+</body></html>
