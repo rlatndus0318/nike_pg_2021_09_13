@@ -1,8 +1,9 @@
- /*공통헤더*/
+
+$(document).ready(function() {
+  /*공통헤더*/
  $("#header").load("header.html");
  /*공통푸터*/
  $("#footers").load("footer.html");
-$(document).ready(function() {
    
     
     function TextPrompter__showNextWord($el) {
