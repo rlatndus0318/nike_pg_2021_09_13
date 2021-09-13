@@ -9,6 +9,9 @@
     --k-text: 'Noto Sans KR', sans-serif;
     --n-text: 'Acme', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
