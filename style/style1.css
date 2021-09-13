@@ -1,16 +1,9 @@
-/*노토산스*/
+/*한글*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-/*영ㅇ어*/
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
+/*영어*/
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 
-/*THIS WEEK*/
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -32,8 +25,6 @@ a {
 }
 
 :root {
-    --sub-text: 'Abril Fatface', cursive;
-    --a-text: 'Khand', sans-serif;
     --k-text: 'Noto Sans KR', sans-serif;
     --en-text: 'Acme', sans-serif;
 }
