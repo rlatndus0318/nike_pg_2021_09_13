@@ -1,13 +1,10 @@
 /*노토산스*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-/*영ㅇ어*/
+/*영어*/
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 :root {
-    --sub-text: 'Permanent Marker', cursive;
     --e-text: 'Staatliches', cursive;
     --k-text: 'Noto Sans KR', sans-serif;
     --n-text: 'Acme', sans-serif;
