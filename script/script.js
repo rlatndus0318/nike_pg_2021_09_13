@@ -4,6 +4,10 @@ $(document).ready(function () {
     $("#header").load("header.html");
     /*공통푸터*/
     $("#footers").load("footer.html");
+    
+    $('a').click(function(e) {
+  e.preventDefault();
+});
 
    
 
