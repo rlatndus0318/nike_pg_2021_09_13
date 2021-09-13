@@ -52,28 +52,24 @@ $(window).scroll(function () {
 
     }
     }
-
-
-    if (scroll >= 500) {
-        $(".style_img_2").stop().animate({
-            right: "0%"
-        }, 1000); 
-    } else {
-        $(".style_img_2").stop().animate({
-            right: "-100%"
-        }, 1000); 
-    };
-
-
-    if (scroll >= 2000){
-        $(".style_img_3").stop().animate({
-            left: "0%"
-        }, 1000); 
-    } else {
-        $(".style_img_3").stop().animate({
-            left: "-100%"
-        }, 1000);
-    };
+//     if (scroll >= 500) {
+//         $(".style_img_2").stop().animate({
+//             right: "0%"
+//         }, 1000); 
+//     } else {
+//         $(".style_img_2").stop().animate({
+//             right: "-100%"
+//         }, 1000); 
+//     };
+//     if (scroll >= 2000){
+//         $(".style_img_3").stop().animate({
+//             left: "0%"
+//         }, 1000); 
+//     } else {
+//         $(".style_img_3").stop().animate({
+//             left: "-100%"
+//         }, 1000);
+//     };
 
 
 });
