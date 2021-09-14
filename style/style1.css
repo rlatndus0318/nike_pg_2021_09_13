@@ -1291,7 +1291,10 @@ p.new {
         width: 100%;
     }
 
-
+  .new-n-1 {
+        width:80%;
+      margin:auto;
+    }
 
 
     .new-n-3 {
