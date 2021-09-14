@@ -1097,7 +1097,12 @@ p.new {
     .marquee {
         font-size: 2rem;
     }
-
+.style_img_3 {
+    overflow:hidden;
+}
+    .style_img_3>.sub-style-box>img{
+    left:50%;
+    }
 }
 
 @media (max-width:480px) and (min-width:425px) {
