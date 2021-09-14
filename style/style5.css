@@ -377,18 +377,7 @@ z-index: 5;}
     }
     
 }
-@media (max-width:867px) and (min-width:320px) {
-.style_img_3 {
-    overflow:hidden;
-    }
-    .style_box .sub-style-box{
-    width: 100%;
-    left: 0%;
-    top: 10%;
-    
-    }
 
-}
 @media(max-width:479px) and (min-width:320px) {
     .other-items-text>img {
         width: 60%;
