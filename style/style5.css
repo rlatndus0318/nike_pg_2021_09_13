@@ -10,7 +10,9 @@
     --k-text: 'Noto Sans KR', sans-serif;
 }
 
-
+html {
+overflow-x:hidden;
+}
 * {
     margin: :0;
     padding: 0;
