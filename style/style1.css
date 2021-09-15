@@ -1,16 +1,9 @@
 /*노토산스*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-/*영ㅇ어*/
+/*영어*/
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
-
-/*THIS WEEK*/
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -33,7 +26,6 @@ a {
 
 :root {
     --sub-text: 'Abril Fatface', cursive;
-    --a-text: 'Khand', sans-serif;
     --k-text: 'Noto Sans KR', sans-serif;
     --en-text: 'Acme', sans-serif;
 }
@@ -59,9 +51,6 @@ section {
     padding: 2%;
 }
 
-
-
-
 /*video*/
 .main-video {
     max-width: 100%;
@@ -80,24 +69,20 @@ section {
 
 .new-n-1 {
     -webkit-text-stroke: 1px #fff;
-    color: transparent;
-    
+    color: transparent;   
 }
 
 .new-n-2 {
- 
     width: 80%;
     margin: auto;
 }
 
 .new-n-3 {
-   
     -webkit-text-stroke: 1px #ddff00;
     color: transparent;
 }
 
 .new-box-list {
-
     margin: auto;
     display: flex;
     justify-content: center;
@@ -106,18 +91,15 @@ section {
     position: relative;
     overflow: hidden;
     min-height: 100%;
-
 }
 
 .new-text {
     position: absolute;
     z-index: 5;
     left: 10px;
-
 }
 
 .new-text > span {
-
     font-weight: 500;
     font-family: var(--en-text);
     position: relative;
@@ -127,7 +109,6 @@ section {
     color: #000;
     padding: 50% 0%;
     margin-left: 10%;
-
 }
 
 .content {
@@ -150,13 +131,11 @@ section {
     padding-top: 2%;
     padding-bottom: 2%;
     width: 50%;
-
     text-align: center;
 }
 
 .new-r-img > img {
     animation: move 1s infinite;
-
 }
 
 
@@ -164,22 +143,15 @@ section {
     from {
         transform: translateY(0px);
     }
-
     to {
         transform: translateY(10px);
     }
 }
 
-
-
-
-
 .new-r {
     overflow: hidden;
     width: 50%;
 }
-
-
 
 .new-r-text {
     position: absolute;
@@ -198,7 +170,6 @@ section {
     right: 5px;
     top: 83%;
 }
-
 
 p.new {
     font-weight: 900;
@@ -234,8 +205,6 @@ p.new {
     color: #fff;
 }
 
-
-
 .item-list-text {
     position: absolute;
     transform: rotateX(90deg);
@@ -248,8 +217,6 @@ p.new {
     transform-origin: 50% 100%;
     color: #fff;
     transition: all 0.6s ease;
-
-
 }
 
 .item-list-text > p {
@@ -300,7 +267,6 @@ p.new {
 
 /*collection 시작*/
 .content-2 {
-
     font-family: var(--en-text);
     text-transform: uppercase;
     margin: 300px auto;
@@ -313,8 +279,6 @@ p.new {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 .c-img {
@@ -325,14 +289,10 @@ p.new {
     color: #fff;
     width: 50%;
     position: relative;
-
-
 }
 
 .c-text-1 {
-
     position: relative;
-
 }
 
 .c-text-1 > h1 {
@@ -344,8 +304,6 @@ p.new {
     margin-top: 50px;
     width: 100%;
     padding: 2%;
-
-
 }
 
 .collection-text button {
@@ -367,9 +325,8 @@ p.new {
     color: #000;
     transition: all .5s linear;
 }
-
-
 /*collection 끝*/
+
 
 /*슬라이더 시작*/
 .m-slider {
@@ -399,28 +356,21 @@ p.new {
 
 .m-slider > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > img {
     width: 100%;
-
 }
-
-
 
 .m-slider > .owl-carousel > .owl-nav > .owl-next {
     left: auto;
     right: 0;
-
 }
-
 /*슬라이더 끝*/
 
 .main2-list {
-
     padding-bottom: 8em;
     overflow: hidden;
 }
 
 .main-video2 {
     width: 100%;
-
 }
 
 .main-video2 > video {
@@ -440,7 +390,6 @@ p.new {
     text-transform: capitalize;
     white-space: nowrap;
     font-size: 2rem;
-
 }
 
 .main-list-text p {
@@ -452,13 +401,11 @@ p.new {
 
 .main-list-text > p.text1 {
     font-weight: 600;
-
 }
 
 .main-list-text .text2 {
     font-size: 1.5rem;
     padding-top: 3rem;
-
 }
 
 .button-box {
@@ -466,11 +413,9 @@ p.new {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.text1,
-.text2 {
+.text1, .text2 {
     font-family: var(--k-text);
 }
 
@@ -488,8 +433,6 @@ p.new {
 .button-box .button:first-child {
     margin-right: 10px;
 }
-
-
 
 .my-slider-box-1 {
     margin: 10px;
@@ -589,13 +532,11 @@ p.new {
 
 .button-box .button:hover {
     background: #bfff00;
-
 }
 
 .main-list-text .text1 {
     font-size: 3.5rem;
 }
-
 
 .m-slider {
     position: relative;
@@ -614,9 +555,7 @@ p.new {
     width: 40%;
     letter-spacing: -10px;
     text-align: center;
-
 }
-
 
 .main-text-2 {
     -webkit-text-stroke: 1px #fff;
@@ -632,7 +571,6 @@ p.new {
 
 .main-text-img {
     width: 60%;
-
     overflow: hidden;
 }
 
@@ -654,7 +592,6 @@ p.new {
 
 /*new 미디어 시작*/
 @media screen and (min-width:1980px) {
-
     .new-n-1 {
         font-size: 5rem;
     }
@@ -663,12 +600,6 @@ p.new {
     }
     .new-n-3 {
         font-size: 8rem;
-    }
-
-    .new-r-text,
-    .new-r-text-2,
-    .n-last {
-        font-size: 2rem;
     }
 
     .c-text-1 {
@@ -680,11 +611,10 @@ p.new {
         font-size: 2rem;
         letter-spacing: 2px;
     }
- .main2-list {
-        padding-bottom:
-            60em;
+    
+    .main2-list {
+        padding-bottom: 60em;
     }
-
 }
 
 @media screen and (min-width:769px) {
@@ -716,12 +646,6 @@ p.new {
         font-size: 8rem;
     }
 
-    .new-r-text,
-    .new-r-text-2,
-    .n-last {
-        font-size: 2.5rem;
-    }
-
     .c-text-1 {
         font-size: 3.5rem;
         letter-spacing: 2px;
@@ -731,7 +655,6 @@ p.new {
         font-size: 2rem;
         letter-spacing: 2px;
     }
-
 }
 
 @media (max-width:1599px) and (min-width:1240px) {
@@ -745,18 +668,6 @@ p.new {
     }
     .new-n-3 {
         font-size: 8rem;
-    }
-
-    .new-r-text,
-    .new-r-text-2,
-    .n-last {
-        font-size: 2.5rem;
-    }
-
-    .new-r-text,
-    .new-r-text-2,
-    .n-last {
-        font-size: 2rem;
     }
 
     .c-text-1 {
@@ -797,13 +708,10 @@ p.new {
     .main-text-3 {
         font-size: 5rem;
     }
-
-
-
+    
     .c-text-1 > h1 {
         font-size: 4rem;
     }
-
 
     .c-text-2 {
         font-size: 1.5rem;
@@ -821,7 +729,6 @@ p.new {
     .item-list-text button {
         font-size: 1rem;
     }
-
 }
 
 
@@ -863,7 +770,6 @@ p.new {
     }
 
     .c-text-1 {
-
         font-size: 2.3rem;
         text-align: center;
     }
@@ -888,7 +794,6 @@ p.new {
     .item-list-text button {
         font-size: 2rem;
     }
-
 }
 
 @media (max-width :1023px) and (min-width :320px) {
@@ -933,7 +838,6 @@ p.new {
     .footer-box ul ul li a {
         font-size: 1.2rem;
     }
-
 }
 
 @media (max-width:768px) and (min-width:481px) {
@@ -959,12 +863,9 @@ p.new {
         width: 80%;
     }
 
-
     .item-list-text button {
         font-size: 1.5rem;
     }
-
-
 
     .new-box:hover .new-n-4 {
         color: #bbff00;
@@ -1067,8 +968,6 @@ p.new {
     .m-slider > .owl-carousel {
         width: 100%;
     }
-
-
 }
 
 @media (max-width:768px) and (min-width:320px) {
@@ -1080,7 +979,6 @@ p.new {
         display: block;
         width: 80%;
         margin: auto;
-
         color: transparent;
         -webkit-text-stroke: 1px #fff;
         text-align: center;
@@ -1097,7 +995,7 @@ p.new {
     .marquee {
         font-size: 2rem;
     }
-.style_img_3 {
+    .style_img_3 {
     overflow:hidden;
 }
     .style_img_3>.sub-style-box>img{
@@ -1106,10 +1004,8 @@ p.new {
 }
 
 @media (max-width:480px) and (min-width:425px) {
-
     .new-n-1 {
         font-size: 2rem;
-
     }
 
     .new-r {
@@ -1140,14 +1036,6 @@ p.new {
     section,
     .new-n-text:not(:last-child) {
         font-size: 1rem;
-
-    }
-
-    .new-r-text,
-    .new-r-text-2,
-    .n-last {
-        font-size: 1.1rem;
-
     }
 
     .collection-n > .c-img {
@@ -1166,7 +1054,6 @@ p.new {
     .m-slider > p {
         font-size: 1.9rem;
     }
-
 
     .c-text-1 {
         margin-top: 50px;
@@ -1187,7 +1074,6 @@ p.new {
         font-size: 4rem;
     }
 
-
     .button-box .button {
         padding: 8px 10px;
         border-radius: 10px;
@@ -1201,14 +1087,12 @@ p.new {
     .main-list-text .text1 {
         font-size: 1.8rem;
         padding-top: 3rem;
-
     }
 
     .main-list-text .text2 {
         font-size: 1rem;
         padding-top: 3rem;
         width: 80%;
-
     }
 
     .item-list-text > p {
@@ -1220,9 +1104,7 @@ p.new {
     }
 
     .main2-list {
-
         padding-bottom: 15em;
-
     }
 
     .new-n-3 {
@@ -1279,7 +1161,6 @@ p.new {
 
     .new-n-3 {
         -webkit-text-stroke: 1px #fff;
-
     }
 
     .new-n-text:hover .new-n-3 {
@@ -1300,7 +1181,6 @@ p.new {
         width:80%;
       margin:auto;
     }
-
 
     .new-n-3 {
         font-size: 4rem;
@@ -1339,7 +1219,6 @@ p.new {
         font-size: 1.2rem;
     }
 
-
     .main-text-img {
         display: none;
     }
@@ -1371,7 +1250,6 @@ p.new {
 
     .m-slider > .owl-carousel {
         width: 100%;
-
     }
 
     .main-list-text > .text1 {
@@ -1390,7 +1268,6 @@ p.new {
     .button-box .button {
         text-align: center;
         font-size: 0.9rem;
-
     }
 
     .main2-list {
