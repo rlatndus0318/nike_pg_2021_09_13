@@ -10,7 +10,7 @@
     <style>
         /*노토산스*/
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-        /*영ㅇ어*/
+        /*영어*/
         @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
@@ -42,7 +42,6 @@
 
         body {
             overflow-x: hidden;
-
             font-size: 10px;
         }
 
@@ -128,7 +127,7 @@
         .menu-list.active {
             display: block;
         }
-         .sub-list {
+          .sub-list {
             color: #fff;
             font-family: var(--k-text);
             background: #000;
@@ -169,11 +168,12 @@
         .sub-list li ul li a:hover {
             text-decoration: underline;
         }
-        <!--서치박스-->
+
         .search-box {
             position: absolute;
             right: 150px;
         }
+
         .header_search {
             border: none;
             background-color: transparent;
@@ -185,12 +185,15 @@
             cursor: pointer;
             font-family: var(--k-text);
         }
+
         .header_search::placeholder {
             color: #fff;
         }
+
         .header_search:focus {
             outline: none;
         }
+
         #recommend {
             margin-top: 1px;
             position: absolute;
@@ -219,17 +222,18 @@
             font-weight: bold;
         }
 
+
         @media (max-width:1340px) and (min-width:1024px) {
             .search-box {
-                right: 5%;
+                right: 10%;
                 width: 100px;
                 padding: 2%;
             }
         
         }
 
-        <!--미디어쿼리-->
         @media (max-width : 1023px) and (min-width :320px) {
+
             /*메뉴바*/
             .menu-bar {
                 height: 50px;
@@ -240,7 +244,6 @@
                 width: 80px;
                 margin-top: 9px;
             }
-
             .m_togglebtn {
                 display: block;
                 color: #fff;
@@ -254,7 +257,7 @@
             .search-box {
                display: none;
             }
-            
+        
             .menu-bar {
                 background: #000;
                 color: #fff;
@@ -277,7 +280,6 @@
                 color: #fff;
                 text-align: center;
                 z-index: 999;
-
             }
 
             .menu-list>li>a {
@@ -292,7 +294,8 @@
 
         }
 
-        @media (max-width:360px) and (min-width:320px) {
+   @media (max-width:360px) and (min-width:320px) {
+
             .logo {
                 width: 70px;
                 margin-top: 9px;
@@ -300,9 +303,9 @@
             }
         }
 
-       
 
-        
+      
+
     </style>
 </head>
 
@@ -310,7 +313,7 @@
     <div class="menu-bar" id="header">
         <a class="m_togglebtn" href="#"> <i class="fas fa-bars"></i> </a>
         <div class="logo"><a href="index.html">
-                <img src="header/n-2.png" alt="">
+                <img src="header/n-2.png" alt="나이키로고">
             </a>
         </div>
         <ul class="menu-list">
@@ -352,7 +355,12 @@
                             <li><a href="">전체보기</a></li>
                         </ul>
                     </li>
+
                 </ul>
+
+
+
+
             </li>
             <li><a href="">men</a>
                 <ul class="sub-list">
@@ -391,7 +399,13 @@
                             <li><a href="">전체보기</a></li>
                         </ul>
                     </li>
+
                 </ul>
+
+
+
+
+
             </li>
             <li><a href="">women</a>
                 <ul class="sub-list">
@@ -430,11 +444,15 @@
                             <li><a href="">전체보기</a></li>
                         </ul>
                     </li>
+
                 </ul>
+
+
+
             </li>
-            <li><a href="">kids</a>
+            <li><a href="#">kids</a>
                 <ul class="sub-list">
-                    <li><a href="">NEW&FEATURED</a>
+                    <li><a href="#">NEW&FEATURED</a>
                         <ul>
                             <li><a href="">신상품 전체보기</a></li>
                             <li><a href="">서울 컬렉션</a></li>
@@ -445,7 +463,7 @@
                             <li><a href="">지속 가능 컬렉션</a></li>
                         </ul>
                     </li>
-                    <li><a href="">NEW FOR MEN</a>
+                    <li><a href="#">NEW FOR MEN</a>
                         <ul>
                             <li><a href="">신발</a></li>
                             <li><a href="">의류</a></li>
@@ -453,7 +471,7 @@
                             <li><a href="">전체보기</a></li>
                         </ul>
                     </li>
-                    <li><a href="">NEW FOR WOMEN</a>
+                    <li><a href="#">NEW FOR WOMEN</a>
                         <ul>
                             <li><a href="">신발</a></li>
                             <li><a href="">의류</a></li>
@@ -461,7 +479,7 @@
                             <li><a href="">전체보기</a></li>
                         </ul>
                     </li>
-                    <li><a href="">NEW FOR KIDS</a>
+                    <li><a href="#">NEW FOR KIDS</a>
                         <ul>
                             <li><a href="">신발</a></li>
                             <li><a href="">의류</a></li>
@@ -471,49 +489,53 @@
                     </li>
 
                 </ul>
+
+
+
             </li>
-            <li><a href="">sale</a>
+            <li><a href="#">sale</a>
                 <ul class="sub-list">
-                    <li><a href="">NEW&FEATURED</a>
+                    <li><a href="#">NEW&FEATURED</a>
                         <ul>
-                            <li><a href="">신상품 전체보기</a></li>
-                            <li><a href="">서울 컬렉션</a></li>
-                            <li><a href="">에어포스 1</a></li>
-                            <li><a href="">ACG</a></li>
-                            <li><a href="">NEW TO SALE</a></li>
-                            <li><a href="">썸머 에센셜</a></li>
-                            <li><a href="">지속 가능 컬렉션</a></li>
+                            <li><a href="#">신상품 전체보기</a></li>
+                            <li><a href="#">서울 컬렉션</a></li>
+                            <li><a href="#">에어포스 1</a></li>
+                            <li><a href="#">ACG</a></li>
+                            <li><a href="#">NEW TO SALE</a></li>
+                            <li><a href="#">썸머 에센셜</a></li>
+                            <li><a href="#">지속 가능 컬렉션</a></li>
                         </ul>
                     </li>
-                    <li><a href="">NEW FOR MEN</a>
+                    <li><a href="3">NEW FOR MEN</a>
                         <ul>
-                            <li><a href="">신발</a></li>
-                            <li><a href="">의류</a></li>
-                            <li><a href="">용품</a></li>
-                            <li><a href="">전체보기</a></li>
+                            <li><a href="#">신발</a></li>
+                            <li><a href="#">의류</a></li>
+                            <li><a href="#">용품</a></li>
+                            <li><a href="#">전체보기</a></li>
                         </ul>
                     </li>
-                    <li><a href="">NEW FOR WOMEN</a>
+                    <li><a href="#">NEW FOR WOMEN</a>
                         <ul>
-                            <li><a href="">신발</a></li>
-                            <li><a href="">의류</a></li>
-                            <li><a href="">용품</a></li>
-                            <li><a href="">전체보기</a></li>
+                            <li><a href="#">신발</a></li>
+                            <li><a href="#">의류</a></li>
+                            <li><a href="#">용품</a></li>
+                            <li><a href="#">전체보기</a></li>
                         </ul>
                     </li>
-                    <li><a href="">NEW FOR KIDS</a>
+                    <li><a href="#">NEW FOR KIDS</a>
                         <ul>
-                            <li><a href="">신발</a></li>
-                            <li><a href="">의류</a></li>
-                            <li><a href="">용품</a></li>
-                            <li><a href="">전체보기</a></li>
+                            <li><a href="#">신발</a></li>
+                            <li><a href="#">의류</a></li>
+                            <li><a href="#">용품</a></li>
+                            <li><a href="#">전체보기</a></li>
                         </ul>
                     </li>
 
                 </ul>
             </li>
         </ul>
-       <!--서치박스-->
+
+       
         <div class="search-box">
             <input type="text" id="search" class="header_search" placeholder="검색어 입력">
             <div id="recommend" class="invisible">
@@ -541,7 +563,7 @@
             inputBox.addEventListener("keyup", (e) => {
                 if (e.target.value.length > 0) {//만약에 인풋박스에 입력이 1개라도 된다면
                     recommendBox.classList.remove('invisible');//추천박스에 인비지블 클래스를 제거해라
-                    texts.forEach((textList) => {//foreach는 array 배열에만 가능, 텍스트의 이벤트 객체를 가져와라
+                    texts.forEach((textList) => {//foreach는 array배열에만 가능, 텍스트의 이벤트 객체를 가져와라
                         textList.textContent = event.target.value; //텍스트 이벤트 객체들을 그대로 가져오고 이것을 textList라고 정의
                     })
                 } else {
@@ -552,6 +574,7 @@
             $(".m_togglebtn").click(function() {
                 $(".menu-list").toggleClass("active");
             });
+
             $(".sub-list").hide();
             $(".menu-list>li").mouseover(function() {
                 $(".sub-list").slideDown(100);
@@ -559,6 +582,7 @@
             $(".menu-list>li").mouseleave(function() {
                 $(".sub-list").hide();
             });
+
         });
 
     </script>
