@@ -557,7 +557,7 @@ font-weight: 300;
 
     <script>
         $(document).ready(function() {
-              const inputBox = document.querySelector("input");
+            const inputBox = document.querySelector("input");
             const recommendBox = document.querySelector("#recommend");
             const texts = document.querySelectorAll(".text");
 
@@ -565,9 +565,10 @@ font-weight: 300;
                 if (e.target.value.length > 0) {//만약에 인풋박스에 입력이 1개라도 된다면
                     recommendBox.classList.remove('invisible');//추천박스에 인비지블 클래스를 제거해라
                     texts.forEach((textList) => {//foreach는 array배열에만 가능, 텍스트의 이벤트 객체를 가져와라
-                        textList.textContent = event.target.value; //텍스트 이벤트 객체들을 그대로 가져오고 이것을 textList라고 정의
+                    textList.textContent = event.target.value; //텍스트 이벤트 객체들을 그대로 가져오고 이것을 textList라고 정의
                     })
-                } else {
+                }
+                else {
                     recommendBox.classList.add('invisible');
                 }
             });
